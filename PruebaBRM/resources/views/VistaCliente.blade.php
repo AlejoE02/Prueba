@@ -14,19 +14,20 @@
             Producto Editado Carrectamente.!
           </div>
           @endif
-          <h2>  Mis Productos  </h2>
+          <h2>  Opciones  </h2>
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th> Productos </th>
-                <th> Acciones </th>
+                <th> Ver Productos </th>
+                <th> Generar Factura </th>
+                <th> Cancelar </th>
+
               </tr>
-              @foreach($inventario as $Producto)
               <tr>
-                <td>{{$Producto->nombre_producto}}</td>
-                <td><a class="btn btn-primary" href="{{ route('Controller.AgregarProducto') }}/{{ $Producto->id }}">Seleccionar</a></td>
+                <td><a class="btn btn-primary" href="{{ route('Controller.AgregarProducto') }}">Ver Productos</a></td>
+                <td><a class="btn btn-primary" href="{{ route('Controller.AgregarProducto') }}">Generar Factura</a></td>
+                <td><a class="btn btn-primary" href="{{ route('Controller.AgregarProducto') }}">Cancelar</a></td>
               </tr>
-              @endforeach
             </thead>
           </table>
           <br>

@@ -65,13 +65,9 @@ class Controller extends BaseController
     }
 
     //Controladores para el cliente
-/**
-    public function Tienda()
-	{
 
-		$inventario = Inventario::all();
-		return view('Inventario',[
-			'inventario'=>$inventario,
-		]);
-	}**/
+    public function VistaCliente()
+	{
+		return view('VistaCliente');
+	}
 }

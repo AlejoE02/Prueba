@@ -33,3 +33,8 @@ Route::post('AgregarProductos/', [
     'uses' =>'Controller@AgregarProductos',
     'as' => 'Controller.AgregarProductos'
 ]);
+
+Route::get('VistaCliente/', [
+    'uses' =>'Controller@VistaCliente',
+    'as' => 'Controller.VistaCliente'
+]);

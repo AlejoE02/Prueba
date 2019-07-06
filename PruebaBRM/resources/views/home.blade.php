@@ -19,7 +19,7 @@
                     
                     @endif
                     @if($nombre != "Proveedor")
-                    <a class="btn btn-primary" href="{{ route('Controller.tienda') }}">Comprar</a>
+                    <a class="btn btn-primary" href="{{ route('Controller.VistaCliente') }}">Comprar</a>
                     @endif
 
                 </div>
