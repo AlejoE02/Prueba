@@ -18,5 +18,6 @@ class Inventario extends Model
         'cantidad',
         'codigo_lote',
         'fecha_de_vencimiento',
+        'precio',
     ];
 }

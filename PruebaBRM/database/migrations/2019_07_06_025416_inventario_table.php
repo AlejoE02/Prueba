@@ -19,6 +19,7 @@ class InventarioTable extends Migration
             $table->Integer('cantidad');
             $table->string('codigo_lote');
             $table->date('fecha_de_vencimiento');
+            $table->string('precio');
             $table->timestamps();
         });
     }

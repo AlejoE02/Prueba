@@ -63,4 +63,15 @@ class Controller extends BaseController
 		return back()->with('msjeditado','eliminado');
         
     }
+
+    //Controladores para el cliente
+/**
+    public function Tienda()
+	{
+
+		$inventario = Inventario::all();
+		return view('Inventario',[
+			'inventario'=>$inventario,
+		]);
+	}**/
 }
