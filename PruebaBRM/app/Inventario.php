@@ -20,4 +20,5 @@ class Inventario extends Model
         'fecha_de_vencimiento',
         'precio',
     ];
+
 }

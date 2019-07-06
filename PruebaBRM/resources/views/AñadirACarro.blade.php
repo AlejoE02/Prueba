@@ -11,35 +11,31 @@
 
                 @if(session()->has('msjeditado'))
                 <div class="alert alert-success" role="alert">
-                    Producto Agregado Correctamente
+                    Producto Añadido Correctamente
                 </div>
                 @endif
 
                 <div class="card-body">
-                    <form action="{{ route('Controller.AgregarProductos') }}" method="POST">
+                    <form action="{{ route('Controller.AnadirProducto') }}" method="POST">
                     @csrf
                      <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <strong>Nombre del Producto: </strong>
-                                <input type="text" name="Nombre" value="{{ $inventario->nombre_producto }}" class="form-control" placeholder="{{$inventario->nombre_producto}}">
+                                <strong>{{ $inventario->nombre_producto }}</strong>
                                 <input type="hidden" name="Id" value="{{$inventario->id}}">
+                                <div>
                                 <strong>Cantidad: </strong>
                                 <input type="text" name="Cantidad" class="form-control" placeholder="{{ $inventario->cantidad }}">
-                                <strong>Codigo Lote: </strong>
-                                <input type="text" name="Codigo" class="form-control" placeholder="{{ $inventario->codigo_lote }}">
-                                <strong>Fecha de Vencimiento: </strong>
-                                <input type="text" name="Fecha" class="form-control" placeholder="{{ $inventario->fecha_de_vencimiento }}">
-                                <strong>Precio: </strong>
-                                <input type="text" name="Fecha" class="form-control" placeholder="{{ $inventario->precio }}">
+                            </div>
                             </div>
                             <br><br>
                             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                                <button type="submit" class="btn btn-success">Guardar Producto</button>
+                                <button type="submit" class="btn btn-success">Añadir Producto</button>
                             </div>
                         </div>
                     </form>
-                    <a class="btn btn-danger" href="{{ url('/home') }}"> Volver</a>      
+                    <a class="btn btn-danger" href="{{ url('/Productos') }}"> Volver</a>      
                 </div>
             </div>
         </div>

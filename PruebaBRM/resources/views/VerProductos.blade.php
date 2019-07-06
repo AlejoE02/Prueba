@@ -19,19 +19,22 @@
             <thead>
               <tr>
                 <th> Productos </th>
-                <th> Canitdad </th>
+                <th> Cantidad </th>
+                <th> Codigo Lote </th>
+                <th> Fecha de Vencimiento </th>
+                <th> Precio (COP)</th>
               </tr>
               @foreach($inventario as $Producto)
               <tr>
                 <td>{{$Producto->nombre_producto}}</td>
-                <td>
-                  <div class="form-group">
-                    <a class="btn btn-primary" href="{{ route('Controller.carrito') }}/{{ $Producto->id }}">Seleccionar</a>
-                  </td>
+                <td>{{$Producto->cantidad}}</td>
+                <td>{{$Producto->codigo_lote}}</td>
+                <td>{{$Producto->fecha_de_vencimiento}}</td>
+                <td>{{$Producto->precio}}</td>
                 </tr>
                 @endforeach
                 <div>
-                  <td><a class="btn btn-primary" href="{{ route('Controller.Gestionar') }}">Gestionar Factura</a></td>
+                  
                 </div>
               </thead>
             </table>

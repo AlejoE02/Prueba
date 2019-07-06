@@ -43,3 +43,33 @@ Route::get('Productos/', [
     'uses' =>'Controller@Productos',
     'as' => 'Controller.productos'
 ]);
+
+Route::get('VerProductos/',[
+    'uses' =>'Controller@VerProductos',
+    'as' => 'Controller.VerProductos'
+]);
+
+Route::get('Carrito/{id?}',[
+    'uses' =>'Controller@Carrito',
+    'as' => 'Controller.carrito'
+]);
+
+Route::post('Anadir/',[
+    'uses' => 'Controller@AnadirProducto',
+    'as' => 'Controller.AnadirProducto'
+]);
+
+Route::get('Gestionar/',[
+    'uses' =>'Controller@GestionarFactura',
+    'as' => 'Controller.Gestionar'
+]);
+
+Route::get('FinalizarCompra/',[
+    'uses' =>'Controller@FinalizarCompra',
+    'as' => 'Controller.FinalizarCompra'
+]);
+
+Route::get('CancelarCompra/',[
+    'uses' =>'Controller@CancelarCompra',
+    'as' => 'Controller.CancelarCompra'
+]);

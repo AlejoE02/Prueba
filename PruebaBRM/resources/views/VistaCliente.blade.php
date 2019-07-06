@@ -22,7 +22,7 @@
                 <th> Comprar </th>
               </tr>
               <tr>
-                <td><a class="btn btn-primary" href="{{ route('Controller.productos') }}">Ver Productos</a></td>
+                <td><a class="btn btn-primary" href="{{ route('Controller.VerProductos') }}">Ver Productos</a></td>
                 <td><a class="btn btn-primary" href="{{ route('Controller.productos') }}">Comprar</a></td>
               </tr>
             </thead>
