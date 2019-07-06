@@ -19,14 +19,11 @@
             <thead>
               <tr>
                 <th> Ver Productos </th>
-                <th> Generar Factura </th>
-                <th> Cancelar </th>
-
+                <th> Comprar </th>
               </tr>
               <tr>
-                <td><a class="btn btn-primary" href="{{ route('Controller.AgregarProducto') }}">Ver Productos</a></td>
-                <td><a class="btn btn-primary" href="{{ route('Controller.AgregarProducto') }}">Generar Factura</a></td>
-                <td><a class="btn btn-primary" href="{{ route('Controller.AgregarProducto') }}">Cancelar</a></td>
+                <td><a class="btn btn-primary" href="{{ route('Controller.productos') }}">Ver Productos</a></td>
+                <td><a class="btn btn-primary" href="{{ route('Controller.productos') }}">Comprar</a></td>
               </tr>
             </thead>
           </table>

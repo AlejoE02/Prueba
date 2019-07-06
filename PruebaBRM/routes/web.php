@@ -38,3 +38,8 @@ Route::get('VistaCliente/', [
     'uses' =>'Controller@VistaCliente',
     'as' => 'Controller.VistaCliente'
 ]);
+
+Route::get('Productos/', [
+    'uses' =>'Controller@Productos',
+    'as' => 'Controller.productos'
+]);

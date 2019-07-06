@@ -70,4 +70,12 @@ class Controller extends BaseController
 	{
 		return view('VistaCliente');
 	}
+
+	public function Productos()
+	{
+		$inventario = Inventario::all();
+		return view('InventarioCliente',[
+			'inventario'=>$inventario,
+		]);
+	}
 }
